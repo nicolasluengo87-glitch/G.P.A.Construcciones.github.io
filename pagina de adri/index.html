@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Empresa - Servicios Integrales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>G.P.A CONSTRUCCIONES</h1>
+        <h2>Servicios Integrales y Soluciones para el Hogar</h2>
+    </header>
+
+    <main>
+        <section class="servicios">
+            <h3>Nuestros Servicios</h3>
+            <div class="contenedor-cubiculos">
+                <div class="cubiculo">
+                    <h4>Plomería</h4>
+                    <p>Reparaciones de fugas, instalación de grifería, destapaciones y mantenimiento general.</p>
+                </div>
+                <div class="cubiculo">
+                    <h4>Gasista Matriculado</h4>
+                    <p>Instalación y reparación de artefactos a gas, planos, pruebas de hermeticidad y regulaciones.</p>
+                </div>
+                <div class="cubiculo">
+                    <h4>Albañilería</h4>
+                    <p>Construcción, refacciones, colocación de cerámicos y trabajos de mampostería en general.</p>
+                </div>
+                <div class="cubiculo">
+                    <h4>Pintura</h4>
+                    <p>Pintura interior y exterior, trabajos en altura, enduído y preparación de superficies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h3>¡Contáctanos para un Presupuesto!</h3>
+
+            <a href="https://wa.me/[+5491134885363]?text=Hola,%20me%20interesa%20un%20presupuesto%20para%20un%20servicio." class="boton-whatsapp" target="_blank">
+                Chatea con nosotros (WhatsApp)
+            </a>
+
+            <div class="formulario-contenedor">
+                <h4>Solicitar Presupuesto Detallado</h4>
+                <form id="formularioPresupuesto">
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="direccion">Tu Dirección (o zona de trabajo):</label>
+                    <input type="text" id="direccion" name="direccion" required>
+
+                    <label for="servicio">Servicio Requerido:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">-- Selecciona un Servicio --</option>
+                        <option value="Plomeria">Plomería</option>
+                        <option value="Gasista">Gasista Matriculado</option>
+                        <option value="Albanileria">Albañilería</option>
+                        <option value="Pintura">Pintura</option>
+                        <option value="Otros">Otro/Consulta</option>
+                    </select>
+                   
+                    <label for="detalles">Detalles del trabajo (cuéntanos lo que necesitas):</label>
+                    <textarea id="detalles" name="detalles" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Solicitud por WhatsApp</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
